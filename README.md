@@ -120,8 +120,9 @@ docker run -d -p 36000:6000 camilocastib22/taller_de_modularizacion_spark_docker
 - Ya solo queda revisar cada uno de los servicios:
   
 ```
-http://localhost:36000/<servicioREST>
+http://localhost:36000/hello
 ```
+Y allí están cada uno de los servicios.
 
 
 
