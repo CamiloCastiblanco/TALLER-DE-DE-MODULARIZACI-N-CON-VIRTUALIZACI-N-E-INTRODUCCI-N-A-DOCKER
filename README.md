@@ -91,12 +91,17 @@ https://hub.docker.com/repository/docker/camilocastib22/taller_de_modularizacion
 - Para ver su funcionamiento debe seguir los siguientes pasos:
 
 ```
-docker pull taller_de_modularizacion_spark_docker:latest
+docker pull camilocastib22/taller_de_modularizacion_spark_docker:latest
 ```
 - Luego el siguiente comando
   
 ```
-docker run -d -p 4537:4537 taller_de_modularizacion_spark_docker:latest
+docker run -d -p 36000:6000 camilocastib22/taller_de_modularizacion_spark_docker:latest
+```
+- Ya solo queda revisar cada uno de los servicios:
+  
+```
+http://localhost:36000/<servicioREST>
 ```
 
 
