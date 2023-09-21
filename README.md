@@ -32,6 +32,25 @@ public class SparkWebServer {
 - Importe las dependencias de spark Java en el archivo pom
 - Asegúrese que el proyecto esté compilando hacia la versión 17 de Java
 - Asegúrese que el proyecto este copiando las dependencias en el directorio target al compilar el proyecto. Esto es necesario para poder construir una imagen de contenedor de docker usando los archivos ya compilados de java. Para hacer esto use el purgan de dependencias de Maven.
+### Para la ejecución de este repositorio:
+- Primero
+```git
+git clone https://github.com/CamiloCastiblanco/TALLER-DE-DE-MODULARIZACI-N-CON-VIRTUALIZACI-N-E-INTRODUCCI-N-A-DOCKER.git
+```
+- Ubicarse en la carpeta Modularizacion_Virtualizacion y borraremos todas las dependencias y modulos que puedan exisitir de los binarios del proyecto.
+```maven
+mvn clean install
+```
+- Realizamos la compilación y empaquetamiento del proyecto
+```maven
+mvn package -U
+```
+- Ejecutamos el proyecto
+  
+```maven
+java -cp target/Modularizacion_Virtualizacion-1.0-SNAPSHOT.jar co.edu.escuelaing.arep.SparkWebServer
+```
+
 ### Evidencia 
 
 ![image](https://github.com/CamiloCastiblanco/TALLER-DE-DE-MODULARIZACI-N-CON-VIRTUALIZACI-N-E-INTRODUCCI-N-A-DOCKER/assets/69698380/b406dd47-6e8f-4ca0-b460-1892675323f7)
